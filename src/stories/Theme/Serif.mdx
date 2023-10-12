@@ -1,0 +1,38 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Theme/Typography/Headings" />
+
+export const typography = {
+  type: {
+    "serif": '"Young Serif", "ui-serif",serif',
+  },
+  weight: {
+    regular: 400,
+  },
+  size: {
+    'heading-sm': 24,
+    'heading-md': 32,
+    'heading-lg': 40
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Headings Typography
+
+Use the serif font for headings.
+
+**Font:** Young Serif
+
+**Weight:** 400(regular)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size["heading-sm"]),
+    Number(typography.size["heading-md"]),
+    Number(typography.size["heading-lg"]),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type['serif']}
+/>

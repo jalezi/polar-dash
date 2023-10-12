@@ -1,0 +1,52 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Theme/Typography/Body" />
+
+export const typography = {
+  type: {
+    "sans": '"Poppins", "ui-sans-serif", sans-serif',
+  },
+  weight: {
+    light: 300,
+    semibold: 600,
+  },
+  size: {
+    'body-sm': 12,
+    'body-md': 16,
+    'body-lg': 24
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Body Typography
+
+Use the sans-serif font for body text.
+
+**Font:** Poppins
+
+**Weight:** 300(light)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size["body-sm"]),
+    Number(typography.size["body-md"]),
+    Number(typography.size["body-lg"]),
+  ]}
+  fontWeight={typography.weight.light}
+  sampleText={SampleText}
+  fontFamily={typography.type['sans']}
+/>
+
+**Weight:** 600(semibold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size["body-sm"]),
+    Number(typography.size["body-md"]),
+    Number(typography.size["body-lg"]),
+  ]}
+  fontWeight={typography.weight.semibold}
+  sampleText={SampleText}
+  fontFamily={typography.type['sans']}
+/>

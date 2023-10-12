@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main className="background--secondary min-h-screen flex justify-center items-center">
-      <div className="background--tertiary p-16">
-        <h1 className="color--on-tertiary">PolarDash</h1>
-        <p className="color--on-tertiary">Ready player one...</p>
+    <main className="bg-secondary min-h-screen flex justify-center items-center">
+      <div className="bg-tertiary p-xl  text-tertiary-on">
+        <h1 className=" text-tertiary-on">PolarDash</h1>
+        <p>Ready player one...</p>
       </div>
     </main>
   );

@@ -1,0 +1,41 @@
+import { Meta, ColorPalette, ColorItem, Title, } from '@storybook/blocks';
+
+<Meta title="Theme/Colors"/>
+
+# Color Palette
+
+The color palette is the set of colors that are used in the design system. The color palette is used to create a visual hierarchy, establish a sense of place, and create a visual connection between components.
+
+<ColorPalette>
+  <ColorItem
+    title="text"
+    subtitle="Black"
+    colors={{ DEFAULT: '#212121', light: '#585858', dark: '#000000' }}
+  />
+  <ColorItem
+    title="background"
+    subtitle="White"
+    colors={{ DEFAULT: '#ffffff',  dark: '#e0e0e0' }}
+  />
+
+  <ColorItem
+    title="primary"
+    subtitle="Green"
+    colors={{ DEFAULT: '#00a667', dark: '#007347', on: '#ffffff' }}
+  />
+  <ColorItem
+    title="secondary"
+    subtitle="Pink"
+    colors={{ DEFAULT: '#f21872', dark:'#bf135b', on: '#ffffff' }}
+  />
+  <ColorItem
+    title="tertiary"
+    subtitle="Orange"
+    colors={{ DEFAULT: '#f27d18', dark: '#bf5e13', on: '#ffffff' }}
+  />
+<ColorItem
+    title="quaternary"
+    subtitle="Blue"
+    colors={{DEFAULT: '#00a6e0', dark: '#00738a', on: '#ffffff'
+}}/>
+</ColorPalette>
