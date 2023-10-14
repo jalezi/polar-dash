@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:json-server": "json-server --watch db/db.json --port 5001 & next dev",
     "build": "next build",
     "start": "next start",
+    "start:json-server": "json-server --watch db/db.json --port 5001 & next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "seed": "node seed/seed.mjs"
   },
   "dependencies": {
     "next": "latest",
@@ -16,6 +19,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.1.0",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
@@ -32,6 +36,7 @@
     "css-loader": "^6.8.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "json-server": "^0.17.4",
     "postcss": "latest",
     "postcss-loader": "^7.3.3",
     "sass": "^1.68.0",

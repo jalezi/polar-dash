@@ -43,13 +43,14 @@ To get started with contributing to "Polar-Dash," follow these steps:
    ```bash
    cd polar-dash
    npm install
-   npm run build
    ```
 
 4. **Start Development Server:** Start the development server to see the app in action.
 
    ```bash
-   npm start
+   cp .env.example .env.local
+   npm run seed # fetch some question from opedtdb api: https://opentdb.com/ and save to ./db/json
+   npm run dev:json-server # starts json server and nextjs app in dev mode
    ```
 
 5. **Create a New Branch:** Create a new branch for your contributions.

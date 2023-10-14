@@ -27,3 +27,10 @@ Temporary Items
 .apdisk
 node_modules
 .next/
+
+# Environment
+.env.local
+
+# seed db
+db
+seed/*.json
